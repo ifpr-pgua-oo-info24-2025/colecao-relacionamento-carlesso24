@@ -27,16 +27,8 @@ public class Livro {
         this.anoPublicacao = anoPublicacao;
     }
 
-    public Autor getAutor() {
-        return autor;
-    }
-
-    public void setAutor(Autor autor) {
-        this.autor = autor;
-    }
-
-    public void exibirDetalhes() {
-        System.out.println("Título: " + titulo + ", Ano: " + anoPublicacao);
-        System.out.println("Autor: " + autor.getNome() + ", Nacionalidade: " + autor.getNacionalidade());
+    public String exibirDetalhes() {
+        return "Título: " + titulo + ", Ano: " + anoPublicacao + "Autor: " + autor.getNome() + ", Nacionalidade: "
+                + autor.getNacionalidade();
     }
 }

@@ -8,4 +8,15 @@ public class LivroDigital extends Livro {
         this.tamanhoDoArquivoMB = tamanhoDoArquivoMB;
     }
 
+    public double getTamanhoDoArquivoMB() {
+        return tamanhoDoArquivoMB;
+    }
+
+    public void setTamanhoDoArquivoMB(double tamanhoDoArquivoMB) {
+        this.tamanhoDoArquivoMB = tamanhoDoArquivoMB;
+    }
+
+    public String exibirDetalhes() {
+        return "Livro Digital: " + super.exibirDetalhes() + "Tamanho: " + getTamanhoDoArquivoMB() + "MB";
+    }
 }

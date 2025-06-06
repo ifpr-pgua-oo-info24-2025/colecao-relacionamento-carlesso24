@@ -8,4 +8,15 @@ public class LivroFisico extends Livro {
         this.numeroDePaginas = numeroDePaginas;
     }
 
+    public int getNumeroDePaginas() {
+        return numeroDePaginas;
+    }
+
+    public void setNumeroDePaginas(int numeroDePaginas) {
+        this.numeroDePaginas = numeroDePaginas;
+    }
+
+    public String exibirDetalhes() {
+        return "Livro Físico: " + super.exibirDetalhes() + "Páginas: " + getNumeroDePaginas();
+    }
 }
